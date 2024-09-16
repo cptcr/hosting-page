@@ -1,0 +1,90 @@
+/* General Partner and Technology Sections */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #0b0024; /* Background Color */
+    color: white; /* Text Color */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.partners, .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Reduced gap to match the main page */
+    margin-top: 40px;
+    padding: 60px 30px; /* Adjusted padding for better spacing */
+    background-color: #120033; /* Slightly darker background */
+    border-radius: 15px; /* Rounded section */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow around the section */
+}
+
+.partner, .technology {
+    background-color: #1e0059; /* Box Background closer to main page */
+    border-radius: 15px; /* Rounded corners */
+    padding: 40px 25px; /* Increased padding for a polished look */
+    flex: 1 1 calc(33% - 40px); /* Better responsive width */
+    min-width: 280px;
+    text-align: left;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Added shadow transition */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    margin-bottom: 20px; /* Consistent spacing */
+    border: 1px solid #2e0079; /* Slight border for separation */
+}
+
+.partner:hover, .technology:hover {
+    transform: translateY(-10px);
+    background-color: #2e0079; /* Hover effect color closer to main page */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.partner h3, .technology h3 {
+    font-size: 24px; /* Adjusted font size */
+    margin-bottom: 15px;
+    font-weight: 600; /* Consistent font weight */
+    text-align: center; /* Center align for consistency */
+}
+
+.partner p, .technology p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #cccccc;
+    text-align: justify; /* Justify text for better readability */
+}
+
+.partner .button, .technology .button {
+    background-color: #a080ff;
+    border: none;
+    padding: 12px 30px; /* Increased padding for a more premium feel */
+    border-radius: 30px; /* More rounded button */
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: fit-content; /* Keeps the button size based on content */
+    margin: 20px auto 0; /* Center the button with top margin */
+    transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Button shadow */
+}
+
+.partner .button:hover, .technology .button:hover {
+    background-color: #ffffff;
+    color: #1e0059;
+    transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .partner, .technology {
+        flex: 1 1 calc(45% - 30px); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .partner, .technology {
+        flex: 1 1 100%; /* Stack on top of each other on mobile */
+    }
+}
