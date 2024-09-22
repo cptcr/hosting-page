@@ -6,6 +6,7 @@ body {
     color: white; /* Text Color */
     line-height: 1.6;
     overflow-x: hidden;
+    user-select: none;
 }
 a {
     color: inherit;

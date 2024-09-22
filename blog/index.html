@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .center-content {
+            display: flex;
+            flex-direction: column;  
+            justify-content: center; 
+            align-items: center;     
+            height: 100vh;         
+            text-align: center;      
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo"><a href="https://cptcr.cc/" style="text-decoration: none; user-select: none;" aria-readonly="true">CPTCR Hosting</a></div>
+            <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+            <nav id="navbar">
+                <a href="#">Home</a>
+                <a href="#services">Services</a>
+                <a href="#features">Features</a>
+                <a href="https://cptcr.shop" target="_blank">Shop</a>
+                <a href="https://cptcr.cc/partners">Partners</a>
+                <div class="dropdown">
+                    <div class="dropbtn" onclick="toggleDropdown()">More <i class="fas fa-caret-down"></i></div>
+                    <div class="dropdown-content">
+                        <a href="https://panel.cptcr.cc" target="_blank">Panel</a>
+                        <a href="https://status.cptcr.cc" target="_blank">Status</a>
+                        <a href="/blog" target="_blank">Blog</a>
+                        <a href="/tos">Terms</a>
+                        <a href="/privacy">Privacy</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="center-content">
+        <h1>Under Development</h1>
+        <p>We will post blogs here soon!</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 CPTCR Hosting. All rights reserved.</p>
+        <p>
+            <a href="mailto:support@cptcr.cc">Support</a> |
+            <a href="mailto:applications@cptcr.cc">Applications</a> |
+            <a href="mailto:management@cptcr.cc">Dev Team</a> |
+            <a href="mailto:cptcr@cptcr.cc">Developer</a>
+        </p>
+        <p>
+            <a href="https://status.cptcr.cc" target="_blank">Status</a> |
+            <a href="https://panel.cptcr.cc" target="_blank">Panel</a> |
+            <a href="https://cptcr.shop" target="_blank">Shop</a>
+        </p>
+    </footer>
+    
+    <!-- Link to External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
